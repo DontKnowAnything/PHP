@@ -5,9 +5,15 @@
      <head>
           <meta http-equiv="Content-Type"
                content="text/html; charset=iso-8859-1" />
-          <title>XHTML 1.0 Strict Template</title>
+          <title>Single Family Home</title>
      </head>
      <body>
-          <p>[Placeholder for XHTML content]</p>
+          <p>
+          <?php
+          $SingleFamilyHome = 399500;
+          $SingleFamilyHome_Display = number_format($SingleFamilyHome, 2);
+          echo "<p>The current median price of a single family home in Pleasanton, CA is $$SingleFamilyHome_Display.</p>"
+          ?>
+          </p>
      </body>
 </html>
